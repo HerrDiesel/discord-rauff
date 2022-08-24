@@ -1,0 +1,43 @@
+.TH "discord-rauff" "1" "2022-08-13" "1.0.0" "Report underage Discord users from file!"
+.SH DESCRIPTION
+discord-rauff is a program, that takes underage Discord users'\& User ID, User Tag, incriminating message (i.\&e.\& in which they explicitly mention their age) link and other information from TSV file, and then files Discord Trust & Safety reports.\&
+.SH SYNOPSIS
+\fBdiscord-rauff\fR [\fIOPTIONS\fR] [\fIARGUMENTS\fR]
+.SH OPTIONS
+.TP
+.B -h --help
+prints help
+.TP
+.B -i --input --from [PATH-TO-FILE]
+uses the specified file as source instead of default $PWD/data.tsv
+.TP
+.B -v --verbose
+verbose
+.SH EXAMPLES
+.TP
+.B discord-rauff
+files report(s) using data from $PWD/data.tsv
+.TP
+.B discord-rauff --help
+prints help
+.TP
+.B discord-rauff --verbose
+files report(s) using data from $PWD/data.tsv with verbose output
+.TP
+.B discord-rauff --input /dsc-reports/uau/list_1.txt
+files report(s) using data from /dsc-reports/uau/list_1.txt
+.TP
+.B discord-rauff --verbose --from /dsc-reports/uau/list_1.txt
+files report(s) using data from /dsc-reports/uau/list_1.txt with verbose output
+.SH TSV FILE
+.TP
+discord-rauff gets data from TSV ("\fBt\fRab-\fBs\fReparated \fBv\fRalues") file, i.e. a text file organized into rows (newline-separated) and columns (tab-separated). Here's its syntax:
+.B USER_ID	USER_TAG	MESSAGE_LINK	ADDITIONAL_INFORMATION
+.SH TSV FILE EXAMPLE
+.TP
+Here's a single row filled with dummy data:
+213700000000001984	Orwell#1984	https://discordapp.com/channels/2137/1984	He's definitely \fBnot\fR underage, because he's freaking \fBDEAD!\fR
+.SH AUTHOR
+Herr Diesel (\fIhttps://github.com/HerrDiesel\fR)
+.SH LICENSE
+discord-rauff is provided under the MIT license. For copyright info, please relate to \fIhttps://github.com/HerrDiesel/discord-rauff/blob/main/LICENSE\fR. \fBIntellectual "property" and patents be damned!\fR
