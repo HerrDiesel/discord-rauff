@@ -12,7 +12,7 @@
 #### Windows
 There is no installation process for Windows. There are two ways to run the script:
 1. Run ```pip3 install -r requirements.txt```, then run ```discord-rauff.py``` script [(Python required)](https://www.python.org/downloads/windows/)
-2. Run the executable (provided in Releases) in your shell
+2. ~~Run the executable (provided in Releases) in your shell~~ **- BROKEN!**
 #### Linux
 [Python is required.](https://www.python.org/downloads/source/) You can either simply run the script (1, 2) or install it (3):
 1. Run ```pip3 install -r requirements.txt``` or ```make setup```, then run ```discord-rauff.py``` script or ```make run```
