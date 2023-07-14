@@ -1,6 +1,9 @@
 # discord-rauff
 **R**eport under**a**ge Discord **u**sers **f**rom **f**ile!
 
+**DEPRECATED!**
+Discord has changed its report form. 
+
 ## Docs
 ### How does it work
 **discord-rauff** is a program, that takes underage Discord users' User ID, User Tag, incriminating message (i.e. in which they explicitly mention their age) link and other information from TSV file, and then files Discord Trust & Safety reports.
@@ -36,3 +39,4 @@ Reported_User_ID_n    Reported_User_Tag_n   Reported_Message_Link_n   Additional
 ```csv
 312856491839455234  Herr Diesel#1984    https://discord.com/channels/327786974419353600/611628996974739492/1005579461187612722  Not only he's **not** underage, he's also a noob at Python!
 ```
+
